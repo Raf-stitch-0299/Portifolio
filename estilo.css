@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    background-image: url(https://e0.pxfuel.com/wallpapers/1012/190/desktop-wallpaper-black-and-gold-3d-texture-for-tech.jpg);
+    background-size: 100vh;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+    margin: 0;
+    transition: background 1s linear;
+ }
+
+ body.dark{
+    background-image: url(https://img.freepik.com/premium-vector/abstract-black-polygon-red-light-futuirstic-technology-background_33869-444.jpg);
+    background-size: 50vh;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+    margin: 0;
+ }
+
+
+ .checkbox{
+    opacity: 0;
+    position: absolute;
+ }
+
+ .label{
+    background-color: #000;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    right: 20px;
+    bottom: 7pc;
+    transform: scale(1.5);
+ }
+
+ .label .bola{
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.5s linear;
+ }
+
+ .checkbox:checked + .label .bola {
+    transform: translateX(24px);
+ }
+
+.fa-moon{
+    color: #ffd001;
+}
+
+.fa-sun{
+    color: #e21021;
+}
+  
+img{
+    width:260px;
+    height:260px;
+    border-radius: 400px;
+}
+
+.b{
+display: flex;
+justify-content: center;
+place-items: center;
+height: 50vh;
+}
+
+.btn{
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    border-radius: 1000px;
+    color: #000000;
+    transition: all 0.6s ease-in-out 0s;
+    box-shadow: inset 0 0 60px #000000;
+}
+
+.btn:hover{
+background: transparent;
+color: #ffd001;
+transform: scale(1.5)rotate(360deg);
+box-shadow: 0 0 60px rgb(rgba(255, 0, 0, 0.64),);
+cursor: grab;
+border: 2px solid #ffd001;
+}
+
+.link{  
+text-decoration: none;
+color: #e21021;
+font-size: 20px;
+
+}
+
+.logo{
+    position: relative;
+    top: 75px;
+}
+  
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap:10px;
+}
+

@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    background-image: url(https://e0.pxfuel.com/wallpapers/1012/190/desktop-wallpaper-black-and-gold-3d-texture-for-tech.jpg);
+    background-size: 100vh;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    transition: background 1s linear;
+    flex-grow: 1;
+    flex-direction: column;
+    word-wrap:break-word ;
+    overflow-wrap: break-word;
+ }
+
+ body.dark{
+    background-image: url(https://img.freepik.com/premium-vector/abstract-black-polygon-red-light-futuirstic-technology-background_33869-444.jpg);
+    background-size: 50vh;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    flex-grow: 1;
+    flex-direction: column;
+ }
+
+
+ /* Início do header */
+
+header{
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+ }
+
+
+ .label{
+    background-color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 26px;
+    width: 75px;
+    transform: scale(1.5);
+ }
+
+ .label .bola{
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    transform: translateX(0px);
+    transition: transform 0.5s linear;
+ }
+
+ .checkbox:checked + .label .bola {
+    transform: translateX(40px);
+ }
+
+.fa-moon{
+    color: #ffd001;
+}
+
+.fa-sun{
+    color: #e21021;
+}
+
+p{
+    text-align: center;
+    padding: 2px;
+    font-size: 22px;
+    left: 10px;
+    width: 300px;
+    position: relative;
+}
+
+.bar{
+    width: 25px;
+    height: 5px;
+    background-color: rgb(255, 187, 0);
+    margin: 5px;
+}
+
+.burger-menu{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    left: 100px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu li a{
+    padding: 10px;
+    color: rgb(255, 175, 4);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu li{
+    margin: 10px 0;
+}
+
+.burger-menu:active{
+    animation: rotate .6s ;
+}
+/* Fim do header */
+
+
+.Eu{
+background-color: rgb(44, 42, 42);
+border-radius: 400px;
+display: grid;
+width: 160px;
+align-items: center;
+gap: 10px;
+}
+
+.titulo{
+    position: relative;
+    left: 30vh;
+    top: 100px;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+marquee{
+    color: white;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+
+}
+
+.Eu img{
+       width:160px;
+    height:160px;
+    border-radius: 400px; 
+}
+.texto p{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    left: 10px;
+    width: 400px;
+    display: flex;
+    position: relative;
+}
+
+h1{
+    color: white;
+display: flex;
+font-size: 40px;
+left: 10px;
+width: 400px;
+position: relative;
+}
+
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+}
+
+.container{
+    width: 100%; 
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1 20px;
+}
+
+.ac{
+    width: 200px;
+    height: 50px;
+    top: 50px;
+    position: relative;
+    left: 60px;
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    border-radius: 1000px;
+    color: #000000;
+    transition: all 0.6s ease-in-out 0s;
+    box-shadow: inset 0 0 60px black;
+    background:  #334;
+    box-shadow: 3px 3px 12px 4px  
+    rgb(255, 196, 4);
+    
+}
+
+.ac:hover{
+    cursor: pointer;
+}
+
+
+.ac:active{
+    transform: scale(1.5)
+}
+
+section.modelo p{
+    margin-bottom: 60px;
+}
+
+
+section.modelo:last-child{
+    margin-bottom: 0;
+}
+
+section.modelo h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.modelo.content{
+    padding: 40px 0;
+    background: rgb(30, 30, 30);
+}
+
+section.modelo.parallax{
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 100vh !important;
+width: 100%;
+position: relative;
+overflow: hidden;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+-webkit-background-size: cover ;
+-moz-background-size: cover;
+-moz-background-size: cover ;
+}
+
+section.modelo.parallax-1{
+    background-image: url(calpredio.png);
+    background-size: 200vh;
+    background-position: -495px ;
+}
+
+section.modelo.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 30%, #000 120% );
+}
+
+section.modelo.parallax-2{
+    background-image: url(C3D.png);
+    background-size: 200vh;
+    background-position: 5px 5px ;
+}
+
+section.modelo.parallax-3{
+    background-image: url(Captura\ de\ Tela\ \(13\).png);
+    background-size: 200vh;
+    background-position: -300px 5px ;
+}
+
+section.modelo.parallax-4{
+    background-image: url(Captura\ de\ Tela\ \(9\).png);
+    background-size: 200vh;
+    background-position: 320px 5px ;
+}
+
+section.modelo.parallax-5{
+    background-image: url(Captura\ de\ Tela\ \(8\).png);
+    background-size: 200vh;
+    background-position: -500px ;
+}
+
+section.modelo.parallax-6{
+    background-image: url(Captura\ de\ Tela\ \(12\).png);
+    background-size: 200vh;
+    background-position: 100px 5px ;
+}
+
+section.modelo.parallax-7{
+    background-image: url(Captura\ de\ Tela\ \(11\).png);
+    background-size: 200vh;
+    background-position: -610px ;
+}
+
+section.modelo.parallax-8{
+    background-image: url(Captura\ de\ Tela\ \(10\).png);
+    background-size: 200vh;
+    background-position: 400px 5px ;
+}
+
+section.modelo.parallax-9{
+    background-image: url(Captura\ de\ Tela\ \(14\).png);
+    background-size: 200vh;
+    background-position: -600px ;
+}
+
+section.modelo.parallax-10{
+    background-image: url(Captura\ de\ Tela\ \(15\).png);
+    background-size: 200vh;
+    background-position: 500px 5px ;
+}
+
+
+
+footer{
+   position: relative;
+   background-color: rgb(0, 0, 0);
+   width: 100%;
+  margin-top: auto;
+  top: 300px;
+}
+
+.coluna1{
+    padding: 10px;
+    color: rgb(255, 175, 4);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 20px;  
+    display: flex;
+    flex-direction: column;
+justify-content: space-around;
+}
+
+.coluna2{
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 20px; 
+    justify-content: space-around; 
+}
+
+.coluna3{
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 20px; 
+    justify-content: space-around;
+    height: 100px;
+    position: relative;
+    color: rgb(255, 175, 4);
+
+}
+
+ .container-footer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.link{
+    color: #ffd001;
+    text-decoration: none;
+}
+
+footer h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 175, 4);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+footer p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 30px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+i{
+    font-size: 1.5rem;
+    padding-right: 23px;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(90deg);
+    }  
+}
+
+
+@media (max-width:768px) {
+    body{
+        background-color: black;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu.ativo{
+        display: flex;
+    }
+
+    .container-footer{
+        flex-direction: column;
+        
+    }
+
+    footer{
+        position: relative;
+        height: 180vh;
+    }
+
+    section.modelo.parallax-4{
+        background-image: url(Captura\ de\ Tela\ \(9\).png);
+        background-size: 200vh;
+        background-position: -120px 5px ;
+    }
+
+    section.modelo.parallax-5{
+        background-image: url(Captura\ de\ Tela\ \(8\).png);
+        background-size: 200vh;
+        background-position: -300px ;
+    }
+
+    section.modelo.parallax-6{
+        background-image: url(Captura\ de\ Tela\ \(12\).png);
+        background-size: 200vh;
+        background-position: -200px 5px ;
+    }
+
+    
+section.modelo.parallax-8{
+    background-image: url(Captura\ de\ Tela\ \(10\).png);
+    background-size: 200vh;
+    background-position: -300px 5px ;
+}
+
+section.modelo.parallax-10{
+    background-image: url(Captura\ de\ Tela\ \(15\).png);
+    background-size: 200vh;
+    background-position: -300px;
+}
+
+.titulo{
+  top:  10px;
+  left: 40px;
+    
+}
+
+
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 15px;
+    color: rgb(255, 194, 28);
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+
+
